@@ -10,7 +10,7 @@
   <body>
     <!-- Header -->
     <header
-      class="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 bg-white fixed top-0 left-0 right-0 z-50"
+      class="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     >
       <div
         class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-18 w-full md:w-auto mb-4 md:mb-0"
@@ -53,7 +53,7 @@
 
     <!-- Main Content -->
     <main
-      class="flex flex-col md:flex-row py-32 md:py-24 px-4 md:px-10 items-center justify-between min-h-screen mt-16 md:mt-0"
+      class="flex flex-col md:flex-row py-32 md:py-24 pr-4 md:px-10 items-center justify-between min-h-screen mt-16 md:mt-0"
     >
       <!-- Left Section -->
       <div class="w-full md:w-1/2 pl-4 md:pl-20 space-y-8">
@@ -111,7 +111,7 @@
         </button>
       </div>
       <!-- Right Section -->
-      <div class="w-full md:w-1/2 md:mt-0 px-4 pt-8 md:px-0">
+      <div class="w-full md:w-1/2 md:mt-0 pt-8 md:px-0">
         <img
           src="assets/Company-dashboard.png"
           alt="Company Dashboard"
@@ -218,5 +218,140 @@
         </div>
       </div>
     </section>
+
+    <!-- Filter and reach to amazing talents -->
+    <section class="relative min-h-screen flex items-center justify-center">
+      <!-- Background Image -->
+
+      <!-- Content -->
+      <div
+        class="relative z-10 flex items-center justify-between w-full max-w-6xl mx-auto"
+      >
+        <!-- Left Side: Heading -->
+        <div class="text-left shadow--lg">
+          <h1 class="text-5xl font-bold text-black leading-tight">
+            Filter and<br />reach to<br />amazing talents
+          </h1>
+          <div></div>
+        </div>
+
+        <!-- Right Side: Profile Card -->
+        <div class="bg-white p-6 rounded-xl shadow-xl w-2xl relative z-20">
+          <!-- Profile Header -->
+          <div class="flex gap-4">
+            <div>
+              <img
+                src="assets/Frame-3.png"
+                alt="Profile Picture"
+                class="w-14 h-14 rounded-lg mr-16 object-fit-cover"
+              />
+            </div>
+            <div>
+              <div class="flex items-center mb-4">
+                <div>
+                  <h3 class="text-lg font-semibold text-[#4A4B68]">
+                    Sarah John, Business Analyst
+                  </h3>
+                  <p class="text-sm text-[#B5B5C3]">
+                    I have 5+ years of experience as a UI/UX designer working in
+                    several industries like SaaS, Mobility, Fintech, and
+                    cybersecurity industries. I create a better experience for
+                    users.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Profile Details -->
+              <div class="flex gap-4 mb-4">
+                <div class="flex flex-col gap-4 border-r">
+                  <p class="text-sm text-[#4A4B68] font-bold">Current role</p>
+                  <p class="font-light">
+                    UI/UX Design with FitFactory <br />
+                    Ltd
+                  </p>
+                </div>
+                <div class="flex flex-col gap-4 border-r pl-8">
+                  <p class="text-sm text-[#4A4B68] font-bold">Open for</p>
+                  <p class="font-light">
+                    Remote, Hybrid, Relocation, <br />
+                    Sponsorship
+                  </p>
+                </div>
+                <div class="flex flex-col gap-4 pl-8">
+                  <p class="text-sm text-[#4A4B68] font-bold">Main skills</p>
+                  <p class="font-light">
+                    Wireframe, <br />
+                    Figma,Adobe xd, prototyping
+                  </p>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div
+                class="flex justify-between border-t pt-4 mt-4 border-t-[#E5E5E5]"
+              >
+                <div>
+                  <p class="text-sm text-[#B5B5C3] font-bold">
+                    Expected salary
+                  </p>
+                  <p class="font-medium text-[#4A4B68]">$70,000 per annum</p>
+                </div>
+                <div>
+                  <p class="text-sm text-[#B5B5C3] font-bold">
+                    Current location
+                  </p>
+                  <p class="font-medium text-[#4A4B68]">USA</p>
+                </div>
+                <button class="text-[#050A8B] font-medium">View profile</button>
+                <button
+                  class="bg-[#050A8B] text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+                >
+                  Chat now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bg-cover right-0">
+        <img src="assets/Frame-120552.png" alt="" />
+      </div>
+    </section>
+
+    <!-- For companies -->
+    <section class="flex items-center justify-center">
+      <div
+        class="bg-[#000009] text-white p-10 rounded-[50px] flex items-center justify-around w-full max-w-6xl"
+      >
+        <div>
+          <p class="text-sm text-gray-400 font-bold">For companies</p>
+          <h1 class="text-3xl font-bold">Hire great talents with HIRVED</h1>
+        </div>
+        <button
+          class="bg-[#050A8B] text-white px-8 py-4 rounded-full hover:bg-[#050A8B] transition"
+        >
+          Learn more
+        </button>
+      </div>
+    </section>
+
+    <!-- Script Scrolling bar -->
+    <script>
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          header.classList.remove("bg-white/80");
+          header.classList.add("bg-white/40", "backdrop-blur-lg", "shadow-sm");
+        } else {
+          header.classList.add("bg-white/80");
+          header.classList.remove(
+            "bg-white/60",
+            "backdrop-blur-md",
+            "shadow-sm"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
