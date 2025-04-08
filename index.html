@@ -232,7 +232,7 @@
           <h1 class="text-5xl font-bold text-black leading-tight">
             Filter and<br />reach to<br />amazing talents
           </h1>
-          <div></div>
+          <div class="w-full h-2 bg-[#050A8B] mt-8 blur-lg"></div>
         </div>
 
         <!-- Right Side: Profile Card -->
@@ -318,10 +318,45 @@
       </div>
     </section>
 
-    <!-- For companies -->
-    <section class="flex items-center justify-center">
+    <!-- Post a Job  -->
+    <section class="relative min-h-screen flex items-center justify-center">
+      <!-- Background Image -->
+      <div class="absolute bg-cover left-0">
+        <img src="assets/Frame-120553.png" alt="" />
+      </div>
+      <!-- Content -->
       <div
-        class="bg-[#000009] text-white p-10 rounded-[50px] flex items-center justify-around w-full max-w-6xl"
+        class="relative z-10 flex items-center justify-between w-full max-w-6xl mx-auto"
+      >
+        <!-- Right Side: Profile Card -->
+        <div
+          class="bg-black text-white p-6 rounded-4xl shadow-lg max-w-sm w-90 relative left-30 z-20"
+        >
+          <h2 class="text-3xl font-bold mb-4 text-center">Let's start!</h2>
+          <p class="text-xl mb-10 text-center text-gray-500">
+            Creating or adding new <br />
+            tasks couldn't be easier
+          </p>
+          <button
+            class="flex items-center justify-center bg-[#050A8B] text-white px-4 py-4 rounded-2xl hover:bg-blue-700 w-full"
+          >
+            <span class="mr-2 text-lg">+</span> Post a job
+          </button>
+        </div>
+        <!-- Left Side: Heading -->
+        <div class="text-left shadow--lg">
+          <h1 class="text-5xl font-bold text-black leading-tight">
+            Let's thousands of<br />talents reach out<br />to you
+          </h1>
+          <div class="w-full h-2 bg-[#050A8B] mt-8 blur-lg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For companies -->
+    <section class="flex items-center justify-center mb-16">
+      <div
+        class="bg-[#000009] text-white p-10 py-16 rounded-[50px] flex items-center justify-around w-full max-w-6xl"
       >
         <div>
           <p class="text-sm text-gray-400 font-bold">For companies</p>
@@ -334,6 +369,58 @@
         </button>
       </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#050A8B] text-white py-10 pb-[100px] flex flex-col">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <div
+          class="flex justify-content-center align-items-center gap-[120px] flex-wrap"
+        >
+          <!-- Brand Section -->
+          <div class="flex flex-col items-center md:items-start mb-8 gap-4">
+            <img src="assets/Group-13 (1).png" alt="" />
+            <p class="text-sm">
+              Explore the job pool and <br />
+              get hired faster with our AI <br />
+              and machine learning <br />
+              algorithm
+            </p>
+          </div>
+
+          <!-- Product Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Product</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-sm hover:underline">Talents</a></li>
+              <li><a href="#" class="text-sm hover:underline">Pricing</a></li>
+            </ul>
+          </div>
+
+          <!-- Work Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Work</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-sm hover:underline">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Stuff Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Stuff</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-sm hover:underline">Privacy</a></li>
+              <li><a href="#" class="text-sm hover:underline">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Language Selector -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">English</h3>
+            <!-- You can add a dropdown or links here if needed -->
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Script Scrolling bar -->
     <script>
