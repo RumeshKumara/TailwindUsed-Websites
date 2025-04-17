@@ -73,7 +73,9 @@
         class="hidden w-full md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg"
       >
         <nav class="p-4">
-          <ul class="flex flex-col space-y-4 text-gray-600 font-semibold">
+          <ul
+            class="flex flex-col space-y-4 text-gray-600 font-semibold text-center"
+          >
             <li
               class="transform transition-transform duration-300 hover:scale-105"
             >
@@ -89,14 +91,14 @@
               >
             </li>
           </ul>
-          <div class="flex flex-col space-y-3 mt-4">
+          <div class="flex flex-col space-y-3 mt-4 items-center justify-center">
             <button
-              class="text-gray-600 font-semibold hover:text-white hover:bg-[#050A8B] px-4 py-3 rounded-full transition-all duration-300 ease-in-out"
+              class="text-gray-600 font-semibold hover:text-white hover:bg-[#050A8B] px-4 py-3 w-60 rounded-full transition-all duration-300 ease-in-out"
             >
               Company sign in
             </button>
             <button
-              class="bg-[#050A8B] text-white px-4 py-3 rounded-full font-semibold transition-all duration-300"
+              class="bg-[#050A8B] text-white px-4 py-3 rounded-full font-semibold transition-all w-60 duration-300"
             >
               Request a demo
             </button>
@@ -206,7 +208,7 @@
 
         <!-- Company Logos Grid -->
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto"
+          class="grid md:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-12 md:mx-auto"
         >
           <!-- Starbucks -->
           <div
@@ -293,39 +295,45 @@
     </section>
 
     <!-- Filter and reach to amazing talents -->
-    <section class="relative min-h-screen flex items-center justify-center">
-      <!-- Background Image -->
-
+    <section
+      class="relative min-h-screen flex items-center justify-center px-4 md:px-6 py-12 md:py-16"
+    >
       <!-- Content -->
       <div
-        class="relative z-10 flex items-center justify-between w-full max-w-6xl mx-auto"
+        class="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto gap-8 md:gap-12"
       >
         <!-- Left Side: Heading -->
-        <div class="text-left shadow--lg">
-          <h1 class="text-5xl font-bold text-black leading-tight">
+        <div class="text-center md:text-left w-full md:w-1/2">
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight"
+          >
             Filter and<br />reach to<br />amazing talents
           </h1>
-          <div class="w-full h-2 bg-[#050A8B] mt-8 blur-lg"></div>
+          <div class="w-full h-2 bg-[#050A8B] mt-4 md:mt-8 blur-lg"></div>
         </div>
 
         <!-- Right Side: Profile Card -->
-        <div class="bg-white p-6 rounded-xl shadow-xl w-2xl relative z-20">
+        <div
+          class="bg-white p-4 md:p-6 rounded-xl shadow-xl w-full md:w-auto relative z-20"
+        >
           <!-- Profile Header -->
-          <div class="flex gap-4">
-            <div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex justify-center sm:justify-start">
               <img
                 src="assets/Frame-3.png"
                 alt="Profile Picture"
-                class="w-14 h-14 rounded-lg mr-16 object-fit-cover"
+                class="w-14 h-14 rounded-lg sm:mr-16 object-fit-cover"
               />
             </div>
             <div>
               <div class="flex items-center mb-4">
-                <div>
-                  <h3 class="text-lg font-semibold text-[#4A4B68]">
+                <div class="w-full">
+                  <h3
+                    class="text-lg font-semibold text-[#4A4B68] text-center sm:text-left"
+                  >
                     Sarah John, Business Analyst
                   </h3>
-                  <p class="text-sm text-[#B5B5C3]">
+                  <p class="text-sm text-[#B5B5C3] text-center sm:text-left">
                     I have 5+ years of experience as a UI/UX designer working in
                     several industries like SaaS, Mobility, Fintech, and
                     cybersecurity industries. I create a better experience for
@@ -335,112 +343,125 @@
               </div>
 
               <!-- Profile Details -->
-              <div class="flex gap-4 mb-4">
-                <div class="flex flex-col gap-4 border-r">
+              <div class="flex flex-col sm:flex-row gap-6 sm:gap-4 mb-4">
+                <div
+                  class="flex flex-col gap-2 sm:gap-4 sm:border-r text-center sm:text-left"
+                >
                   <p class="text-sm text-[#4A4B68] font-bold">Current role</p>
                   <p class="font-light">
-                    UI/UX Design with FitFactory <br />
-                    Ltd
+                    UI/UX Design with FitFactory<br />Ltd
                   </p>
                 </div>
-                <div class="flex flex-col gap-4 border-r pl-8">
+                <div
+                  class="flex flex-col gap-2 sm:gap-4 sm:border-r sm:pl-8 text-center sm:text-left"
+                >
                   <p class="text-sm text-[#4A4B68] font-bold">Open for</p>
                   <p class="font-light">
-                    Remote, Hybrid, Relocation, <br />
-                    Sponsorship
+                    Remote, Hybrid, Relocation,<br />Sponsorship
                   </p>
                 </div>
-                <div class="flex flex-col gap-4 pl-8">
+                <div
+                  class="flex flex-col gap-2 sm:gap-4 sm:pl-8 text-center sm:text-left"
+                >
                   <p class="text-sm text-[#4A4B68] font-bold">Main skills</p>
                   <p class="font-light">
-                    Wireframe, <br />
-                    Figma,Adobe xd, prototyping
+                    Wireframe,<br />Figma, Adobe xd, prototyping
                   </p>
                 </div>
               </div>
 
               <!-- Buttons -->
               <div
-                class="flex justify-between border-t pt-4 mt-4 border-t-[#E5E5E5]"
+                class="flex flex-col sm:flex-row gap-4 sm:gap-0 sm:justify-between border-t pt-4 mt-4 border-t-[#E5E5E5]"
               >
-                <div>
+                <div class="text-center sm:text-left">
                   <p class="text-sm text-[#B5B5C3] font-bold">
                     Expected salary
                   </p>
                   <p class="font-medium text-[#4A4B68]">$70,000 per annum</p>
                 </div>
-                <div>
+                <div class="text-center sm:text-left">
                   <p class="text-sm text-[#B5B5C3] font-bold">
                     Current location
                   </p>
                   <p class="font-medium text-[#4A4B68]">USA</p>
                 </div>
-                <button
-                  class="text-[#050A8B] font-medium transform transition-transform duration-300 hover:scale-105"
-                >
-                  View profile
-                </button>
-                <button
-                  class="bg-[#050A8B] text-white px-4 py-2 rounded-full transition transform transition-transform duration-300 hover:scale-105"
-                >
-                  Chat now
-                </button>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <button
+                    class="text-[#050A8B] font-medium transform transition-transform duration-300 hover:scale-105"
+                  >
+                    View profile
+                  </button>
+                  <button
+                    class="bg-[#050A8B] text-white px-4 py-2 rounded-full transition transform transition-transform duration-300 hover:scale-105"
+                  >
+                    Chat now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="absolute bg-cover right-0">
+      <div class="absolute bg-cover right-0 hidden lg:block">
         <img src="assets/Frame-120552.png" alt="" />
       </div>
     </section>
 
-    <!-- Post a Job  -->
-    <section class="relative min-h-screen flex items-center justify-center">
-      <!-- Background Image -->
-      <div class="absolute bg-cover left-0">
+    <!-- Post a Job Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center px-4 md:px-6 py-12 md:py-16"
+    >
+      <div class="absolute bg-cover left-0 hidden lg:block">
         <img src="assets/Frame-120553.png" alt="" />
       </div>
-      <!-- Content -->
       <div
-        class="relative z-10 flex items-center justify-between w-full max-w-6xl mx-auto"
+        class="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto gap-8 md:gap-12"
       >
-        <!-- Right Side: Profile Card -->
         <div
-          class="bg-black text-white p-6 rounded-4xl shadow-lg max-w-sm w-90 relative left-30 z-20"
+          class="bg-black text-white p-6 rounded-4xl shadow-lg w-full max-w-sm mx-auto md:mx-0 order-2 md:order-1"
         >
-          <h2 class="text-3xl font-bold mb-4 text-center">Let's start!</h2>
-          <p class="text-xl mb-10 text-center text-gray-500">
-            Creating or adding new <br />
+          <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">
+            Let's start!
+          </h2>
+          <p class="text-lg md:text-xl mb-8 md:mb-10 text-center text-gray-500">
+            Creating or adding new <br class="hidden md:block" />
             tasks couldn't be easier
           </p>
           <button
-            class="flex items-center justify-center bg-[#050A8B] text-white px-4 py-4 rounded-2xl w-full text-lg font-semibold transition transform transition-transform duration-300 hover:scale-105"
+            class="flex items-center justify-center bg-[#050A8B] text-white px-4 py-3 md:py-4 rounded-2xl w-full text-base md:text-lg font-semibold transition transform hover:scale-105"
           >
-            <span class="mr-2 text-2xl">+</span> Post a job
+            <span class="mr-2 text-xl md:text-2xl">+</span> Post a job
           </button>
         </div>
-        <!-- Left Side: Heading -->
-        <div class="text-left shadow--lg">
-          <h1 class="text-5xl font-bold text-black leading-tight">
+        <div class="text-center md:text-left order-1 md:order-2">
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight"
+          >
             Let's thousands of<br />talents reach out<br />to you
           </h1>
-          <div class="w-full h-2 bg-[#050A8B] mt-8 blur-lg"></div>
+          <div class="w-full h-2 bg-[#050A8B] mt-4 md:mt-8 blur-lg"></div>
         </div>
       </div>
     </section>
 
-    <!-- For companies -->
-    <section class="flex items-center justify-center mb-16">
+    <!-- For companies Section -->
+    <section
+      class="flex items-center justify-center mb-8 md:mb-16 px-4 md:px-6"
+    >
       <div
-        class="bg-[#000009] text-white p-10 py-16 rounded-[50px] flex items-center justify-around w-full max-w-6xl"
+        class="bg-[#000009] text-white p-6 md:p-10 py-8 md:py-16 rounded-3xl md:rounded-[50px] flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-6 md:gap-0"
       >
-        <div>
-          <p class="text-sm text-gray-400 font-bold">For companies</p>
-          <h1 class="text-3xl font-bold">Hire great talents with HIRVED</h1>
+        <div class="text-center md:text-left">
+          <p class="text-xs md:text-sm text-gray-400 font-bold mb-2 md:mb-0">
+            For companies
+          </p>
+          <h1 class="text-2xl md:text-3xl font-bold">
+            Hire great talents with HIRVED
+          </h1>
         </div>
         <button
-          class="bg-[#050A8B] text-white px-8 py-4 rounded-full hover:bg-[#050A8B] transition transform transition-transform duration-300 hover:scale-105"
+          class="bg-[#050A8B] text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-base hover:bg-[#050A8B] transition transform hover:scale-105"
         >
           Learn more
         </button>
@@ -451,35 +472,42 @@
     <section class="py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+        <div class="text-center mb-8 md:mb-12 px-4 md:px-0">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Do more with Hirved
           </h2>
-          <!-- Toggle -->
-          <div class="flex justify-center items-center space-x-4">
-            <span class="text-gray-700 font-medium">Pay Monthly</span>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" class="sr-only peer" />
-              <div
-                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition"
-              ></div>
-              <div
-                class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"
-              ></div>
-            </label>
-            <span class="text-gray-700 font-medium">Pay Yearly</span>
-          </div>
-          <div class="flex align-items-center relative left-[730px] top-2">
-            <img src="assets/Arrow.png" alt="" class="w-16 h-16" />
-            <span class="ml-2 mt-6 text-blue-600 font-semibold">Save 50%</span>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0 md:space-x-4"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-gray-700 font-medium">Pay Monthly</span>
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" />
+                <div
+                  class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition"
+                ></div>
+                <div
+                  class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"
+                ></div>
+              </label>
+              <span class="text-gray-700 font-medium">Pay Yearly</span>
+            </div>
+            <div class="flex items-center mt-4 md:mt-0 md:ml-8">
+              <img
+                src="assets/Arrow.png"
+                alt=""
+                class="w-12 h-12 md:w-16 md:h-16"
+              />
+              <span class="ml-2 text-blue-600 font-semibold">Save 50%</span>
+            </div>
           </div>
         </div>
 
         <!-- Pricing Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <!-- Freemium Plan -->
           <div
-            class="bg-white p-8 rounded-2xl hover:bg-[#050A8B] group transition duration-300"
+            class="bg-white p-8 rounded-2xl md:border-0 border hover:bg-[#050A8B] group transition duration-300"
           >
             <h3
               class="text-xl font-bold text-gray-900 group-hover:text-white mb-2"
@@ -594,7 +622,7 @@
 
           <!-- Company Plan -->
           <div
-            class="bg-white p-8 rounded-2xl hover:bg-[#050A8B] group transition duration-300"
+            class="bg-white p-8 rounded-2xl md:border-0 border hover:bg-[#050A8B] group transition duration-300"
           >
             <h3
               class="text-xl font-bold mb-2 text-black group-hover:text-white"
